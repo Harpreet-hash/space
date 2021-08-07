@@ -65,6 +65,7 @@ leo1i=loadImage("constellations/leo1.jpg");
 draco1i=loadImage("constellations/draco1.jpg");
 dracoi=loadImage("constellations/draco.jpg");
 issImg=loadImage("background/iss.jpg");
+    getIss();
 
 }
 
@@ -224,7 +225,7 @@ if(appState===4){
 }
 if(appState===5){    
     background(sky1);
-    getIss();
+    
     iss=createSprite(displayWidth/2-450,displayHeight/2-100,500,500);
     iss.addImage(issImg);
     iss.scale=0.8;
