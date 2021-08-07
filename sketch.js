@@ -294,14 +294,14 @@ if(appState===5){
 }
 }
 async function getIss(){
-    var response=await fetch("https://api.open-notify.org/iss-now.json");
+    var response=await fetch("https://api.wheretheiss.at/v1/satellites/25544");
    
     var responseJSON=await response.json();
      
-    dataInfo=responseJSON.iss_position;
-    dataInfoA=dataInfo.longitude;
-    console.log(dataInfoA)
-    dataInfoB=dataInfo.latitude;
+    
+    dataInfoA=responseJSON.longitude;
+  
+    dataInfoB=responseJSON.latitude;
     hello1=dataInfoA.slice(0,1);
     hello2=dataInfoB.slice(0,1)
 }
