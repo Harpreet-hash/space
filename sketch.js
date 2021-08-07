@@ -295,6 +295,7 @@ if(appState===5){
 }
 async function getIss(){
     var response=await fetch("https://api.open-notify.org/iss-now.json");
+    console.log(response)
     var responseJSON=await response.json();
     dataInfo=responseJSON.iss_position;
     dataInfoA=dataInfo.longitude;
