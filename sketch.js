@@ -302,9 +302,9 @@ async function getIss(){
     console.log(responseJSON)
      
     
-    dataInfoA=responseJSON.longitude.toString();
+    dataInfoA=await responseJSON.longitude.toString();
   
-    dataInfoB=responseJSON.latitude.toString();
+    dataInfoB=await responseJSON.latitude.toString();
     hello1=dataInfoA.slice(0,1);
     hello2=dataInfoB.slice(0,1)
 }
