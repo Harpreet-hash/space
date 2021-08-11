@@ -65,7 +65,8 @@ leo1i=loadImage("constellations/leo1.jpg");
 draco1i=loadImage("constellations/draco1.jpg");
 dracoi=loadImage("constellations/draco.jpg");
 issImg=loadImage("background/iss.jpg");
-    getIss();
+    setInterval(async()=>{getIss()},3000)
+  
 
 }
 
@@ -301,9 +302,9 @@ async function getIss(){
     console.log(responseJSON)
      
     
-    dataInfoA=responseJSON.longitude;
+    dataInfoA=responseJSON.longitude.toString();
   
-    dataInfoB=responseJSON.latitude;
+    dataInfoB=responseJSON.latitude.toString();
     hello1=dataInfoA.slice(0,1);
     hello2=dataInfoB.slice(0,1)
 }
