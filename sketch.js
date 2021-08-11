@@ -299,12 +299,14 @@ async function getIss(){
     var response=await fetch("https://api.wheretheiss.at/v1/satellites/25544");
    
     var responseJSON=await response.json();
-    console.log(responseJSON)
+    
      
     
     dataInfoA=await responseJSON.longitude.toString();
   
     dataInfoB=await responseJSON.latitude.toString();
+    console.log(dataInfoA)
     hello1=dataInfoA.slice(0,1);
+     console.log(hello1)
     hello2=dataInfoB.slice(0,1)
 }
